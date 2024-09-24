@@ -1,0 +1,482 @@
+
+2024/04/30 09:01:46 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-04-30 09:01:46 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/04/30 09:01:47 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-04-30 09:01:47 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/04/30 09:01:47 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-04-30 09:01:47 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/04/30 09:01:48 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-04-30 09:01:48 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/04/30 09:01:49 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-04-30 09:01:49 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/04/30 09:01:51 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-04-30 09:01:51 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/04/30 09:01:54 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-04-30 09:01:54 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+[GIN] 2024/04/30 - 09:02:04 | 200 |   18.197393ms |       127.0.0.1 | POST     "/api/user/login"
+[GIN] 2024/04/30 - 09:02:06 | 200 |   29.621192ms |       127.0.0.1 | GET      "/api/user/count"
+[GIN] 2024/04/30 - 09:02:06 | 200 |   29.451735ms |       127.0.0.1 | GET      "/api/article/count"
+[GIN] 2024/04/30 - 09:02:07 | 200 |   30.023449ms |       127.0.0.1 | GET      "/api/message/count"
+[GIN] 2024/04/30 - 09:02:07 | 200 |   31.708795ms |       127.0.0.1 | GET      "/api/image/count"
+[GIN] 2024/04/30 - 09:02:07 | 200 |    1.775112ms |       127.0.0.1 | GET      "/api/user/list"
+[GIN] 2024/04/30 - 09:02:28 | 200 |     625.767µs |       127.0.0.1 | GET      "/api/image/list"
+
+2024/04/30 09:02:30 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[1.273ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 09:02:30 | 200 |    1.425676ms |       127.0.0.1 | GET      "/api/comment/list"
+[GIN] 2024/04/30 - 09:02:31 | 200 |     1.09076ms |       127.0.0.1 | GET      "/api/message/list"
+
+2024/04/30 09:02:31 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.570ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 09:02:31 | 200 |     702.557µs |       127.0.0.1 | GET      "/api/comment/list"
+[GIN] 2024/04/30 - 09:02:33 | 200 |     637.264µs |       127.0.0.1 | GET      "/api/image/list"
+
+2024/04/30 09:02:33 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.506ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 09:02:33 | 200 |     663.404µs |       127.0.0.1 | GET      "/api/comment/list"
+[GIN] 2024/04/30 - 09:02:34 | 200 |     1.24479ms |       127.0.0.1 | GET      "/api/user/list"
+[GIN] 2024/04/30 - 09:02:35 | 200 |   41.866315ms |       127.0.0.1 | GET      "/api/user/count"
+[GIN] 2024/04/30 - 09:02:35 | 200 |   43.862249ms |       127.0.0.1 | GET      "/api/image/count"
+[GIN] 2024/04/30 - 09:02:35 | 200 |   50.866683ms |       127.0.0.1 | GET      "/api/article/count"
+[GIN] 2024/04/30 - 09:02:35 | 200 |   51.113785ms |       127.0.0.1 | GET      "/api/message/count"
+[WEB] 2024-04-30 09:02:38 [36m[info][0m message.go:47 server/service.MessageService.GetAllMessage Redis 缓存留言数据获取成功
+[GIN] 2024/04/30 - 09:02:38 | 200 |     443.514µs |       127.0.0.1 | GET      "/api/message/list"
+[GIN] 2024/04/30 - 09:02:50 | 200 |  5.086989187s |       127.0.0.1 | GET      "/api/conversation/chat"
+[GIN] 2024/04/30 - 09:03:25 | 200 |    5.095847ms |       127.0.0.1 | GET      "/api/user/token"
+[GIN] 2024/04/30 - 09:03:43 | 200 |    5.375517ms |       127.0.0.1 | GET      "/api/user/token"
+[GIN] 2024/04/30 - 09:03:48 | 200 |     9.53769ms |       127.0.0.1 | GET      "/api/article/list"
+[GIN] 2024/04/30 - 09:03:52 | 200 |    4.689249ms |       127.0.0.1 | GET      "/api/user/token"
+[GIN] 2024/04/30 - 09:04:00 | 200 |  4.295084081s |       127.0.0.1 | GET      "/api/conversation/chat"
+[GIN] 2024/04/30 - 09:04:00 | 200 |     697.109µs |       127.0.0.1 | GET      "/api/user/info?username=mark_ydh"
+[GIN] 2024/04/30 - 09:04:00 | 200 |     909.527µs |       127.0.0.1 | GET      "/api/article/list/id?id=100008"
+[GIN] 2024/04/30 - 09:04:01 | 200 |  4.488766954s |       127.0.0.1 | GET      "/api/conversation/chat"
+[GIN] 2024/04/30 - 09:04:02 | 200 |    7.754632ms |       127.0.0.1 | GET      "/api/user/token"
+[GIN] 2024/04/30 - 09:04:10 | 200 |  8.123326311s |       127.0.0.1 | GET      "/api/conversation/chat"
+[GIN] 2024/04/30 - 09:04:10 | 200 |    5.220002ms |       127.0.0.1 | GET      "/api/user/token"
+[WEB] 2024-04-30 09:04:11 [36m[info][0m message.go:47 server/service.MessageService.GetAllMessage Redis 缓存留言数据获取成功
+[GIN] 2024/04/30 - 09:04:11 | 200 |     609.423µs |       127.0.0.1 | GET      "/api/message/list"
+[GIN] 2024/04/30 - 09:04:13 | 200 |  2.985791794s |       127.0.0.1 | GET      "/api/conversation/chat"
+[GIN] 2024/04/30 - 09:04:40 | 200 |     906.939µs |       127.0.0.1 | GET      "/api/article/count"
+[GIN] 2024/04/30 - 09:04:40 | 200 |     607.333µs |       127.0.0.1 | GET      "/api/user/count"
+[GIN] 2024/04/30 - 09:04:40 | 200 |     818.029µs |       127.0.0.1 | GET      "/api/image/count"
+[GIN] 2024/04/30 - 09:04:40 | 200 |     767.828µs |       127.0.0.1 | GET      "/api/message/count"
+[GIN] 2024/04/30 - 09:04:41 | 200 |    1.219949ms |       127.0.0.1 | GET      "/api/user/list"
+[WEB] 2024-04-30 09:11:34 [36m[info][0m article.go:91 server/service.ArticleService.GetAllArticle Redis 缓存文章数据获取成功
+[GIN] 2024/04/30 - 09:11:34 | 200 |    6.519005ms |       127.0.0.1 | GET      "/api/article/list"
+[GIN] 2024/04/30 - 09:11:36 | 200 |      672.14µs |       127.0.0.1 | GET      "/api/image/list"
+
+2024/04/30 09:11:37 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[1.302ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 09:11:37 | 200 |    1.473668ms |       127.0.0.1 | GET      "/api/comment/list"
+[WEB] 2024-04-30 09:11:37 [36m[info][0m message.go:47 server/service.MessageService.GetAllMessage Redis 缓存留言数据获取成功
+[GIN] 2024/04/30 - 09:11:37 | 200 |     322.781µs |       127.0.0.1 | GET      "/api/message/list"
+
+2024/04/30 09:11:38 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.591ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 09:11:38 | 200 |     724.838µs |       127.0.0.1 | GET      "/api/comment/list"
+[GIN] 2024/04/30 - 09:11:39 | 200 |     898.885µs |       127.0.0.1 | GET      "/api/article/count"
+[GIN] 2024/04/30 - 09:11:39 | 200 |     755.377µs |       127.0.0.1 | GET      "/api/user/count"
+[GIN] 2024/04/30 - 09:11:39 | 200 |     919.922µs |       127.0.0.1 | GET      "/api/image/count"
+[GIN] 2024/04/30 - 09:11:39 | 200 |      852.43µs |       127.0.0.1 | GET      "/api/message/count"
+[GIN] 2024/04/30 - 09:11:39 | 200 |    1.869768ms |       127.0.0.1 | GET      "/api/user/list"
+[GIN] 2024/04/30 - 09:11:49 | 200 |  4.906094913s |       127.0.0.1 | GET      "/api/conversation/chat"
+[WEB] 2024-04-30 09:11:49 [36m[info][0m article.go:91 server/service.ArticleService.GetAllArticle Redis 缓存文章数据获取成功
+[GIN] 2024/04/30 - 09:11:49 | 200 |    5.514973ms |       127.0.0.1 | GET      "/api/article/list"
+[GIN] 2024/04/30 - 09:40:02 | 200 |    5.188016ms |       127.0.0.1 | GET      "/api/user/token"
+[GIN] 2024/04/30 - 09:40:02 | 200 |    1.004838ms |       127.0.0.1 | GET      "/api/user/count"
+[GIN] 2024/04/30 - 09:40:02 | 200 |     937.351µs |       127.0.0.1 | GET      "/api/article/count"
+[GIN] 2024/04/30 - 09:40:02 | 200 |     835.812µs |       127.0.0.1 | GET      "/api/image/count"
+[GIN] 2024/04/30 - 09:40:02 | 200 |     3.85801ms |       127.0.0.1 | GET      "/api/message/count"
+[GIN] 2024/04/30 - 09:40:29 | 200 |     724.846µs |       127.0.0.1 | GET      "/api/user/info?username=ZhuGui"
+[GIN] 2024/04/30 - 09:40:30 | 200 |     906.148µs |       127.0.0.1 | GET      "/api/article/list/id?id=100000"
+[GIN] 2024/04/30 - 09:40:30 | 200 |     898.815µs |       127.0.0.1 | GET      "/api/article/list/id?id=100000"
+[GIN] 2024/04/30 - 09:40:40 | 200 |      950.82µs |       127.0.0.1 | GET      "/api/user/count"
+[GIN] 2024/04/30 - 09:40:40 | 200 |    1.095039ms |       127.0.0.1 | GET      "/api/article/count"
+[GIN] 2024/04/30 - 09:40:40 | 200 |     865.216µs |       127.0.0.1 | GET      "/api/image/count"
+[GIN] 2024/04/30 - 09:40:40 | 200 |     807.806µs |       127.0.0.1 | GET      "/api/message/count"
+[GIN] 2024/04/30 - 09:40:40 | 200 |    1.124237ms |       127.0.0.1 | GET      "/api/message/list"
+
+2024/04/30 09:40:40 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.617ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 09:40:40 | 200 |     767.807µs |       127.0.0.1 | GET      "/api/comment/list"
+[GIN] 2024/04/30 - 09:40:41 | 200 |    4.641194ms |       127.0.0.1 | GET      "/api/user/token"
+
+2024/04/30 09:40:42 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.584ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 09:40:42 | 200 |     770.392µs |       127.0.0.1 | GET      "/api/comment/list"
+[GIN] 2024/04/30 - 09:40:42 | 200 |    4.833036ms |       127.0.0.1 | GET      "/api/user/token"
+
+2024/04/30 09:40:42 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.553ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 09:40:42 | 200 |     714.681µs |       127.0.0.1 | GET      "/api/comment/list"
+[GIN] 2024/04/30 - 09:40:43 | 200 |     572.459µs |       127.0.0.1 | GET      "/api/image/list"
+
+2024/04/30 09:40:45 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.623ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 09:40:45 | 200 |     761.339µs |       127.0.0.1 | GET      "/api/comment/list"
+[GIN] 2024/04/30 - 09:40:46 | 200 |    5.121702ms |       127.0.0.1 | GET      "/api/user/token"
+
+2024/04/30 09:40:46 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.550ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 09:40:46 | 200 |     685.177µs |       127.0.0.1 | GET      "/api/comment/list"
+[WEB] 2024-04-30 09:40:46 [36m[info][0m message.go:47 server/service.MessageService.GetAllMessage Redis 缓存留言数据获取成功
+[GIN] 2024/04/30 - 09:40:46 | 200 |     388.779µs |       127.0.0.1 | GET      "/api/message/list"
+[GIN] 2024/04/30 - 09:40:47 | 200 |    4.810909ms |       127.0.0.1 | GET      "/api/user/token"
+[WEB] 2024-04-30 09:40:47 [36m[info][0m message.go:47 server/service.MessageService.GetAllMessage Redis 缓存留言数据获取成功
+[GIN] 2024/04/30 - 09:40:47 | 200 |     301.485µs |       127.0.0.1 | GET      "/api/message/list"
+
+2024/04/30 09:40:48 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.658ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 09:40:48 | 200 |     814.146µs |       127.0.0.1 | GET      "/api/comment/list"
+[GIN] 2024/04/30 - 09:40:48 | 200 |     4.87386ms |       127.0.0.1 | GET      "/api/user/token"
+
+2024/04/30 09:40:48 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.585ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 09:40:48 | 200 |     739.318µs |       127.0.0.1 | GET      "/api/comment/list"
+[GIN] 2024/04/30 - 09:40:49 | 200 |    4.914334ms |       127.0.0.1 | GET      "/api/user/token"
+
+2024/04/30 09:40:49 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.528ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 09:40:49 | 200 |     708.455µs |       127.0.0.1 | GET      "/api/comment/list"
+[GIN] 2024/04/30 - 09:40:50 | 200 |    1.336199ms |       127.0.0.1 | GET      "/api/user/token"
+
+2024/04/30 09:40:50 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.565ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 09:40:50 | 200 |     716.494µs |       127.0.0.1 | GET      "/api/comment/list"
+[GIN] 2024/04/30 - 09:40:50 | 200 |     590.513µs |       127.0.0.1 | GET      "/api/image/list"
+[GIN] 2024/04/30 - 09:40:50 | 200 |    4.957138ms |       127.0.0.1 | GET      "/api/user/token"
+[GIN] 2024/04/30 - 09:40:50 | 200 |     702.118µs |       127.0.0.1 | GET      "/api/image/list"
+[GIN] 2024/04/30 - 09:40:51 | 200 |    1.520335ms |       127.0.0.1 | GET      "/api/user/token"
+[GIN] 2024/04/30 - 09:40:51 | 200 |     601.315µs |       127.0.0.1 | GET      "/api/image/list"
+
+2024/04/30 09:40:51 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.526ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 09:40:51 | 200 |     677.861µs |       127.0.0.1 | GET      "/api/comment/list"
+[GIN] 2024/04/30 - 09:40:51 | 200 |    5.285163ms |       127.0.0.1 | GET      "/api/user/token"
+
+2024/04/30 09:40:52 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.578ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 09:40:52 | 200 |     754.617µs |       127.0.0.1 | GET      "/api/comment/list"
+[GIN] 2024/04/30 - 09:40:52 | 200 |    1.639144ms |       127.0.0.1 | GET      "/api/user/token"
+
+2024/04/30 09:40:52 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.549ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 09:40:52 | 200 |     729.267µs |       127.0.0.1 | GET      "/api/comment/list"
+[GIN] 2024/04/30 - 09:40:52 | 200 |    5.424565ms |       127.0.0.1 | GET      "/api/user/token"
+
+2024/04/30 09:40:52 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.557ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 09:40:52 | 200 |     736.158µs |       127.0.0.1 | GET      "/api/comment/list"
+[GIN] 2024/04/30 - 09:40:55 | 200 |     1.44962ms |       127.0.0.1 | GET      "/api/user/list"
+[GIN] 2024/04/30 - 09:40:56 | 200 |    5.206342ms |       127.0.0.1 | GET      "/api/user/token"
+[GIN] 2024/04/30 - 09:40:56 | 200 |    1.955519ms |       127.0.0.1 | GET      "/api/user/list"
+[GIN] 2024/04/30 - 11:01:57 | 200 |    5.061128ms |       127.0.0.1 | GET      "/api/user/token"
+[GIN] 2024/04/30 - 11:02:26 | 200 |    5.683857ms |       127.0.0.1 | GET      "/api/user/token"
+[GIN] 2024/04/30 - 11:02:33 | 200 |    5.593978ms |       127.0.0.1 | GET      "/api/user/token"
+[GIN] 2024/04/30 - 11:03:00 | 200 |    6.351016ms |       127.0.0.1 | POST     "/api/user/login"
+[GIN] 2024/04/30 - 11:09:42 | 200 |     933.514µs |       127.0.0.1 | GET      "/api/article/count"
+[GIN] 2024/04/30 - 11:09:42 | 200 |     706.477µs |       127.0.0.1 | GET      "/api/message/count"
+[GIN] 2024/04/30 - 11:09:42 | 200 |     3.02285ms |       127.0.0.1 | GET      "/api/image/count"
+[GIN] 2024/04/30 - 11:09:42 | 200 |    7.260117ms |       127.0.0.1 | GET      "/api/user/count"
+[GIN] 2024/04/30 - 11:09:43 | 200 |    6.572042ms |       127.0.0.1 | GET      "/api/article/list"
+[GIN] 2024/04/30 - 11:09:44 | 200 |     683.537µs |       127.0.0.1 | GET      "/api/image/list"
+[GIN] 2024/04/30 - 11:09:44 | 200 |     701.609µs |       127.0.0.1 | GET      "/api/image/get"
+[GIN] 2024/04/30 - 11:10:45 | 200 |    4.862182ms |       127.0.0.1 | POST     "/api/image/upload"
+[GIN] 2024/04/30 - 11:27:06 | 200 |      5.7805ms |       127.0.0.1 | GET      "/api/user/token"
+[GIN] 2024/04/30 - 11:27:51 | 200 |    6.172362ms |       127.0.0.1 | POST     "/api/user/login"
+[GIN] 2024/04/30 - 11:28:02 | 200 |    6.714671ms |       127.0.0.1 | GET      "/api/article/list"
+[GIN] 2024/04/30 - 11:28:18 | 200 |     739.728µs |       127.0.0.1 | GET      "/api/article/get?id=100035"
+
+2024/04/30 11:28:18 [31;1m/root/website/service/service/comment.go:64 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.556ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id WHERE comments.article = '100035' ORDER BY comments.create desc
+[GIN] 2024/04/30 - 11:28:18 | 200 |     664.087µs |       127.0.0.1 | GET      "/api/comment/get?id=100035"
+[WEB] 2024-04-30 11:28:22 [36m[info][0m article.go:91 server/service.ArticleService.GetAllArticle Redis 缓存文章数据获取成功
+[GIN] 2024/04/30 - 11:28:22 | 200 |    9.800005ms |       127.0.0.1 | GET      "/api/article/list"
+[GIN] 2024/04/30 - 11:28:26 | 200 |     830.468µs |       127.0.0.1 | GET      "/api/article/get?id=100039"
+
+2024/04/30 11:28:26 [31;1m/root/website/service/service/comment.go:64 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.720ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id WHERE comments.article = '100039' ORDER BY comments.create desc
+[GIN] 2024/04/30 - 11:28:26 | 200 |     832.327µs |       127.0.0.1 | GET      "/api/comment/get?id=100039"
+[GIN] 2024/04/30 - 11:28:42 | 200 |    1.002632ms |       127.0.0.1 | GET      "/api/message/list"
+[GIN] 2024/04/30 - 11:29:29 | 200 | 25.094837157s |       127.0.0.1 | GET      "/api/conversation/chat"
+[GIN] 2024/04/30 - 11:29:34 | 200 |     928.805µs |       127.0.0.1 | GET      "/api/user/count"
+[GIN] 2024/04/30 - 11:29:34 | 200 |     1.01489ms |       127.0.0.1 | GET      "/api/article/count"
+[GIN] 2024/04/30 - 11:29:34 | 200 |   38.197404ms |       127.0.0.1 | GET      "/api/image/count"
+[GIN] 2024/04/30 - 11:29:34 | 200 |   39.000238ms |       127.0.0.1 | GET      "/api/message/count"
+[GIN] 2024/04/30 - 11:29:38 | 200 |    1.430572ms |       127.0.0.1 | GET      "/api/user/list"
+[GIN] 2024/04/30 - 11:29:45 | 200 |       754.7µs |       127.0.0.1 | GET      "/api/image/list"
+[GIN] 2024/04/30 - 11:29:45 | 200 |     719.034µs |       127.0.0.1 | GET      "/api/image/get"
+[GIN] 2024/04/30 - 11:29:58 | 200 |   52.827945ms |       127.0.0.1 | GET      "/api/user/count"
+[GIN] 2024/04/30 - 11:29:58 | 200 |   50.535951ms |       127.0.0.1 | GET      "/api/image/count"
+[GIN] 2024/04/30 - 11:29:58 | 200 |   51.402869ms |       127.0.0.1 | GET      "/api/message/count"
+[GIN] 2024/04/30 - 11:29:58 | 200 |   53.399836ms |       127.0.0.1 | GET      "/api/article/count"
+[WEB] 2024-04-30 11:30:00 [36m[info][0m article.go:91 server/service.ArticleService.GetAllArticle Redis 缓存文章数据获取成功
+[GIN] 2024/04/30 - 11:30:00 | 200 |    4.693491ms |       127.0.0.1 | GET      "/api/article/list"
+[GIN] 2024/04/30 - 11:30:03 | 200 |     814.727µs |       127.0.0.1 | GET      "/api/article/get?id=100039"
+
+2024/04/30 11:30:03 [31;1m/root/website/service/service/comment.go:64 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.642ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id WHERE comments.article = '100039' ORDER BY comments.create desc
+[GIN] 2024/04/30 - 11:30:03 | 200 |     779.113µs |       127.0.0.1 | GET      "/api/comment/get?id=100039"
+[GIN] 2024/04/30 - 11:30:07 | 200 |    49.00778ms |       127.0.0.1 | GET      "/api/article/count"
+[GIN] 2024/04/30 - 11:30:07 | 200 |   51.990022ms |       127.0.0.1 | GET      "/api/image/count"
+[GIN] 2024/04/30 - 11:30:07 | 200 |   50.308958ms |       127.0.0.1 | GET      "/api/user/count"
+[GIN] 2024/04/30 - 11:30:07 | 200 |   52.255943ms |       127.0.0.1 | GET      "/api/message/count"
+[WEB] 2024-04-30 11:30:08 [36m[info][0m article.go:91 server/service.ArticleService.GetAllArticle Redis 缓存文章数据获取成功
+[GIN] 2024/04/30 - 11:30:08 | 200 |    5.227048ms |       127.0.0.1 | GET      "/api/article/list"
+[GIN] 2024/04/30 - 11:30:12 | 200 |     859.468µs |       127.0.0.1 | GET      "/api/image/get"
+[GIN] 2024/04/30 - 11:30:12 | 200 |     498.795µs |       127.0.0.1 | GET      "/api/image/list"
+[GIN] 2024/04/30 - 11:30:12 | 200 |     885.569µs |       127.0.0.1 | GET      "/api/article/get?id=100039"
+[GIN] 2024/04/30 - 11:30:17 | 200 |   40.333621ms |       127.0.0.1 | GET      "/api/user/count"
+[GIN] 2024/04/30 - 11:30:17 | 200 |    44.73174ms |       127.0.0.1 | GET      "/api/article/count"
+[GIN] 2024/04/30 - 11:30:17 | 200 |   47.740521ms |       127.0.0.1 | GET      "/api/image/count"
+[GIN] 2024/04/30 - 11:30:17 | 200 |   47.863539ms |       127.0.0.1 | GET      "/api/message/count"
+[GIN] 2024/04/30 - 11:30:18 | 200 |     569.575µs |       127.0.0.1 | GET      "/api/image/list"
+[GIN] 2024/04/30 - 11:30:18 | 200 |      692.01µs |       127.0.0.1 | GET      "/api/image/get"
+[WEB] 2024-04-30 11:30:26 [36m[info][0m article.go:91 server/service.ArticleService.GetAllArticle Redis 缓存文章数据获取成功
+[GIN] 2024/04/30 - 11:30:26 | 200 |     3.80819ms |       127.0.0.1 | GET      "/api/article/list"
+[GIN] 2024/04/30 - 11:30:30 | 200 |     634.453µs |       127.0.0.1 | GET      "/api/image/list"
+
+2024/04/30 11:30:33 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.637ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 11:30:33 | 200 |     817.413µs |       127.0.0.1 | GET      "/api/comment/list"
+[WEB] 2024-04-30 11:30:36 [36m[info][0m message.go:47 server/service.MessageService.GetAllMessage Redis 缓存留言数据获取成功
+[GIN] 2024/04/30 - 11:30:36 | 200 |     382.657µs |       127.0.0.1 | GET      "/api/message/list"
+
+2024/04/30 11:30:41 [31;1m/root/website/service/service/comment.go:109 [35;1mError 1146 (42S02): Table 'website.comments' doesn't exist
+[0m[33m[0.554ms] [34;1m[rows:-][0m SELECT comments.id as Id, comments.author as Author, username, avatar, article, title, comments.content as Content, comments.create as `Create` FROM `comments` LEFT JOIN users ON comments.author = users.id LEFT JOIN articles ON comments.article = articles.id ORDER BY comments.create desc
+[GIN] 2024/04/30 - 11:30:41 | 200 |     697.032µs |       127.0.0.1 | GET      "/api/comment/list"
+[WEB] 2024-04-30 11:30:43 [36m[info][0m message.go:47 server/service.MessageService.GetAllMessage Redis 缓存留言数据获取成功
+[GIN] 2024/04/30 - 11:30:43 | 200 |    1.669359ms |       127.0.0.1 | GET      "/api/message/list"
+[GIN] 2024/04/30 - 11:34:15 | 200 |     631.495µs |       127.0.0.1 | GET      "/api/user/info?username=mark_ydh"
+[GIN] 2024/04/30 - 11:34:15 | 200 |     744.925µs |       127.0.0.1 | GET      "/api/article/list/id?id=100008"
+[GIN] 2024/04/30 - 11:34:16 | 200 |      744.11µs |       127.0.0.1 | GET      "/api/article/list/id?id=100008"
+[GIN] 2024/04/30 - 14:35:56 | 200 |    5.824353ms |       127.0.0.1 | GET      "/api/user/token"
+[GIN] 2024/04/30 - 14:35:58 | 200 |    4.691792ms |       127.0.0.1 | GET      "/api/user/token"
+[GIN] 2024/04/30 - 14:35:59 | 200 |    4.854269ms |       127.0.0.1 | GET      "/api/user/token"
+
+2024/04/30 15:35:32 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-04-30 15:35:32 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/04/30 15:35:32 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-04-30 15:35:32 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/04/30 15:35:32 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-04-30 15:35:32 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+[GIN] 2024/04/30 - 15:36:09 | 200 |   18.751869ms |       127.0.0.1 | GET      "/api/user/token"
+
+2024/04/30 15:39:03 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-04-30 15:39:03 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/04/30 15:39:04 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-04-30 15:39:04 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/04/30 15:39:04 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-04-30 15:39:04 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/04/30 15:39:05 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-04-30 15:39:05 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+[GIN] 2024/04/30 - 15:39:31 | 200 |   51.975803ms |       127.0.0.1 | GET      "/api/user/token"
+
+2024/05/03 06:40:48 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:40:48 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:40:48 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:40:48 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:40:49 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:40:49 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:40:49 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:40:49 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:40:50 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:40:50 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:40:52 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:40:52 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:40:56 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:40:56 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:41:02 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:41:02 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:41:16 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:41:16 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:41:41 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:41:41 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:42:33 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:42:33 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:42:56 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:42:56 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:42:56 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:42:56 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:42:57 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:42:57 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:42:57 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:42:57 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:42:58 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:42:58 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:43:00 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:43:00 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:43:03 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:43:03 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:43:10 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:43:10 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:43:23 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:43:23 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:43:49 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:43:49 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:44:40 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:44:40 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:45:40 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:45:40 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:46:40 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:46:40 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:47:40 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:47:40 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:48:41 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:48:41 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:49:41 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:49:41 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:50:41 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:50:41 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:51:41 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:51:41 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:52:41 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:52:41 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:53:41 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:53:41 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:54:41 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:54:42 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:55:42 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:55:42 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:56:42 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:56:42 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 06:57:42 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 06:57:42 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 07:06:55 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 07:06:55 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 07:06:55 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 07:06:55 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 07:06:55 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 07:06:55 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 07:06:56 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 07:06:56 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 07:06:57 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 07:06:57 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 07:06:59 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 07:06:59 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 07:07:02 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 07:07:02 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 07:07:09 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 07:07:09 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 07:07:22 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 07:07:22 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 07:07:48 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 07:07:48 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败
+
+2024/05/03 07:08:39 [35m/root/website/service/core/mysql.go:25
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3306: connect: connection refused
+[WEB] 2024-05-03 07:08:39 [31m[fatal][0m mysql.go:29 server/core.InitMySQL mysql连接失败

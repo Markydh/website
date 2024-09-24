@@ -1,0 +1,11 @@
+clean.sh
+run.sh
+database/mysql/data/mysql/*
+database/mysql/data/image/*
+!database/mysql/data/image/default.png
+nginx/ssl/markydh.pem
+nginx/ssl/markydh.key
+# server/*
+# web/*
+backend/*
+frontend/*
